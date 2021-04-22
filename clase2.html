@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* univeral */
+    * {
+        background-color: aqua;
+        margin: 0;
+    }
+    /* tipo */
+    p {
+        color: red;
+    }
+    /* clase */
+    .hello {
+        font-size: 2rem;
+    }
+    /* id */
+    #parrafo {
+        color: white;
+        font-size: 3rem;
+    }
+    /* pseudoclases */
+    div p:first-child {
+        background-color: blue;
+    }
+    div p:last-child {
+        background-color: bisque;
+    }
+    div p:nth-child(2n){
+        color: white;
+        font-size: 3rem;
+    }
+    div p:nth-child(2n+1){
+        color: aquamarine;
+        background-color: black;
+    }
+    button {
+        background-color: cadetblue;
+        color: white;
+        padding: 3px 6px 3px 6px;
+        font-size: 2rem;
+        border-radius: 6px;
+    }
+    button:hover{
+        background-color: green;
+    }
+    /* pseudoelementos */
+    button::first-letter{
+        color: black;
+        font-size: 3rem;
+    }
+    h1::before{
+        content: "$";
+    }
+    h1::after{
+        content: ".00";
+    }
+    .modelBox{
+        background-color: #ff9c91;
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 10px solid #50b6bb;
+        box-sizing: border-box;
+        margin: 20px;
+    }
+</style>
+<body>
+    
+    <p>Hola Mundo feliz</p>
+    <p class="hello">Hola mundos</p>
+    <p id="parrafo">Esto es otro parrafo</p>
+
+    <div>
+        <p>🐶Perro</p>
+        <p>🐱Gato</p>
+        <p>🐭Raton</p>
+        <p>🐹Hamster</p>
+        <p>🐰Conejo</p>
+    </div>
+
+    <button>Entrar</button>
+    <h1>10</h1>
+
+    <div class="modelBox">
+
+    </div>
+
+    <div class="modelBox">
+
+    </div>
+
+</body>
+</html>
